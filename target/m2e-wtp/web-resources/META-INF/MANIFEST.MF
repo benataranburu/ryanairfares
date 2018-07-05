@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: baran
+Build-Jdk: 10.0.1
+Implementation-Title: ryanairfares
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.github.benataranburu
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ryanairfares
+Created-By: Maven Integration for Eclipse
+
