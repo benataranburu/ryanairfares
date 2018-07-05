@@ -3,6 +3,7 @@
 
 # Eclipse Project Files
 *.project
+*.settings
 
 # Log file
 *.log
