@@ -1,4 +1,4 @@
-package com.github.benataranburu.json;
+package com.github.benataranburu.ryanairfares.json;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,36 +12,49 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-"dateOut",
-"flights"
+"fareKey",
+"fareClass",
+"fares"
 })
-public class Date {
+public class LeisureFare {
 
-@JsonProperty("dateOut")
-private String dateOut;
-@JsonProperty("flights")
-private List<Flight> flights = null;
+@JsonProperty("fareKey")
+private String fareKey;
+@JsonProperty("fareClass")
+private String fareClass;
+@JsonProperty("fares")
+private List<Fare__> fares = null;
 @JsonIgnore
 private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-@JsonProperty("dateOut")
-public String getDateOut() {
-return dateOut;
+@JsonProperty("fareKey")
+public String getFareKey() {
+return fareKey;
 }
 
-@JsonProperty("dateOut")
-public void setDateOut(String dateOut) {
-this.dateOut = dateOut;
+@JsonProperty("fareKey")
+public void setFareKey(String fareKey) {
+this.fareKey = fareKey;
 }
 
-@JsonProperty("flights")
-public List<Flight> getFlights() {
-return flights;
+@JsonProperty("fareClass")
+public String getFareClass() {
+return fareClass;
 }
 
-@JsonProperty("flights")
-public void setFlights(List<Flight> flights) {
-this.flights = flights;
+@JsonProperty("fareClass")
+public void setFareClass(String fareClass) {
+this.fareClass = fareClass;
+}
+
+@JsonProperty("fares")
+public List<Fare__> getFares() {
+return fares;
+}
+
+@JsonProperty("fares")
+public void setFares(List<Fare__> fares) {
+this.fares = fares;
 }
 
 @JsonAnyGetter

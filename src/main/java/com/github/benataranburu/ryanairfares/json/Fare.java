@@ -1,5 +1,4 @@
-package com.github.benataranburu.json;
-
+package com.github.benataranburu.ryanairfares.json;
 import java.util.HashMap;
 import java.util.Map;
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
@@ -16,10 +15,11 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "count",
 "hasDiscount",
 "publishedFare",
+"mandatorySeatFee",
 "discountInPercent",
 "hasPromoDiscount"
 })
-public class Fare__ {
+public class Fare {
 
 @JsonProperty("type")
 private String type;
@@ -31,6 +31,8 @@ private Integer count;
 private Boolean hasDiscount;
 @JsonProperty("publishedFare")
 private Double publishedFare;
+@JsonProperty("mandatorySeatFee")
+private MandatorySeatFee mandatorySeatFee;
 @JsonProperty("discountInPercent")
 private Integer discountInPercent;
 @JsonProperty("hasPromoDiscount")
@@ -88,6 +90,16 @@ public void setPublishedFare(Double publishedFare) {
 this.publishedFare = publishedFare;
 }
 
+@JsonProperty("mandatorySeatFee")
+public MandatorySeatFee getMandatorySeatFee() {
+return mandatorySeatFee;
+}
+
+@JsonProperty("mandatorySeatFee")
+public void setMandatorySeatFee(MandatorySeatFee mandatorySeatFee) {
+this.mandatorySeatFee = mandatorySeatFee;
+}
+
 @JsonProperty("discountInPercent")
 public Integer getDiscountInPercent() {
 return discountInPercent;
@@ -119,3 +131,4 @@ this.additionalProperties.put(name, value);
 }
 
 }
+

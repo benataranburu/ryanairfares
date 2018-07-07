@@ -1,4 +1,4 @@
-package com.github.benataranburu.json;
+package com.github.benataranburu.ryanairfares.json;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 "discountInPercent",
 "hasPromoDiscount"
 })
-public class Fare_ {
+public class Fare__ {
 
 @JsonProperty("type")
 private String type;

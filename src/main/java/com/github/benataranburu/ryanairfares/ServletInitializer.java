@@ -1,4 +1,4 @@
-package com.github.benataranburu;
+package com.github.benataranburu.ryanairfares;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;

@@ -1,4 +1,4 @@
-package com.github.benataranburu;
+package com.github.benataranburu.ryanairfares;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

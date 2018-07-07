@@ -1,4 +1,4 @@
-package com.github.benataranburu.json;
+package com.github.benataranburu.ryanairfares.json;
 
 import java.util.HashMap;
 import java.util.List;
